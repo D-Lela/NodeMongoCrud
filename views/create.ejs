@@ -1,0 +1,19 @@
+<html lang="en">
+<%- include('./partials/head.ejs')  %>
+<body>
+    <%- include('./partials/nav.ejs')  %>
+
+    <div class="create-movie content">
+        <form action="/movies" method="POST">
+            <label for="Series_Title">Movie title:</label>
+            <input type="text" id="Series_Title" name="Series_Title" required>
+            <label for="Released_Year">Release Year:</label>
+            <input type="text" id="Released_Year" name="Released_Year" required>
+            <label for="Overview">Overview:</label>
+            <textarea id="Overview" name="Overview" required></textarea>
+            <button>Submit</button>
+        </form>     
+    </div>
+    <%- include('./partials/footer.ejs')  %>
+</body>
+</html>
